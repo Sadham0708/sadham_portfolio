@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/sadham_portfolio/static/css/main.3983af20.css",
-    "main.js": "/sadham_portfolio/static/js/main.0fb46afb.js",
+    "main.js": "/sadham_portfolio/static/js/main.29b7f842.js",
     "static/media/memoryGame.jpeg": "/sadham_portfolio/static/media/memoryGame.8f153ea836159152307c.jpeg",
     "static/media/weather-1.png": "/sadham_portfolio/static/media/weather-1.c310b653a309d616e147.png",
     "static/media/todolist-1.jpg": "/sadham_portfolio/static/media/todolist-1.ff868d7dd6351c0c9dcf.jpg",
-    "static/media/SadhamResume.pdf": "/sadham_portfolio/static/media/SadhamResume.51bf03c6f4a1b6edcee0.pdf",
+    "static/media/SadhamResume.pdf": "/sadham_portfolio/static/media/SadhamResume.26000a2055bacc2a3299.pdf",
     "static/media/portfolio.jpg": "/sadham_portfolio/static/media/portfolio.a49728e46d177cafdc18.jpg",
     "static/media/ecommerce_website.webp": "/sadham_portfolio/static/media/ecommerce_website.00e5a75d711ae310b607.webp",
     "index.html": "/sadham_portfolio/index.html",
     "main.3983af20.css.map": "/sadham_portfolio/static/css/main.3983af20.css.map",
-    "main.0fb46afb.js.map": "/sadham_portfolio/static/js/main.0fb46afb.js.map"
+    "main.29b7f842.js.map": "/sadham_portfolio/static/js/main.29b7f842.js.map"
   },
   "entrypoints": [
     "static/css/main.3983af20.css",
-    "static/js/main.0fb46afb.js"
+    "static/js/main.29b7f842.js"
   ]
 }
