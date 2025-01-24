@@ -1,0 +1,147 @@
+/* Section Styling */
+#skills {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.skillTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f8ff1e; /* Yellow for contrast */
+  text-transform: uppercase;
+}
+
+.skillDesc {
+  font-size: 1rem;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Skill Bars Container */
+.skillBars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Skill Bar */
+.skillBar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skillBar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(248, 255, 30, 0.6);
+}
+
+/* Skill Image */
+.skillBarImg {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.skillBar:hover .skillBarImg {
+  transform: scale(1.1);
+  border: 2px solid #f8ff1e;
+}
+
+/* Skill Text */
+.skillBarText h3 {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.skillBar:hover h3 {
+  color: #f8ff1e;
+}
+
+.skillBarText p {
+  font-size: 0.9rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.skillBar:hover p {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .skillTitle {
+    font-size: 2.4rem;
+  }
+
+  .skillDesc {
+    font-size: 0.95rem;
+  }
+
+  .skillBars {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillBars {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .skillBar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skillBarImg {
+    margin-bottom: 0.5rem;
+  }
+
+  .skillBarText h3 {
+    font-size: 1rem;
+  }
+
+  .skillBarText p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillTitle {
+    font-size: 2rem;
+  }
+
+  .skillDesc {
+    font-size: 0.85rem;
+  }
+
+  .skillBar {
+    padding: 0.8rem;
+  }
+
+  .skillBarImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skillBarText h3 {
+    font-size: 0.9rem;
+  }
+
+  .skillBarText p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,150 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1; /* Subtle background visibility */
+}
+
+.introContent {
+    max-width: 700px;
+    color: white;
+    text-align: center;
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.introText {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    color: yellow;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.btnImg {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .introText {
+        font-size: 2rem;
+    }
+
+    .introPara {
+        font-size: 0.9rem;
+    }
+
+    .hello {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .introContent {
+        padding: 1rem;
+    }
+
+    .introText {
+        font-size: 1.8rem;
+    }
+
+    .introPara {
+        font-size: 0.85rem;
+    }
+
+    .hello {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .btnImg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introText {
+        font-size: 1.5rem;
+    }
+
+    .hello {
+        font-size: 1.2rem;
+    }
+
+    .introPara {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .btnImg {
+        width: 18px;
+        height: 18px;
+    }
+}

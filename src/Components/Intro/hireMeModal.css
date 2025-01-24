@@ -1,0 +1,149 @@
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal content */
+.modal-content {
+  background: #444;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  
+}
+
+
+/* Close button (X) */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f8ff1e;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #f0f0f0;
+  transform: scale(1.2);
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f0f0f0; 
+  text-align: center; 
+}
+
+input, textarea {
+  width: 100%; 
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #f8ff1e;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f0f0f0; 
+  color: black;
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+  height: 100px; /* Set default height */
+}
+
+/* Button Styling */
+.hireMeSubmitBtn {
+  padding: 10px 20px;
+  background-color: #f8ff1e; /* Yellow background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #121212; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hireMeSubmitBtn:hover {
+  background-color: black; /* Light hover effect */
+  color: #f8ff1e;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    width: 95%; /* Slightly smaller modal width */
+  }
+
+  label {
+    font-size: 14px; /* Smaller font for smaller screens */
+  }
+
+  input, textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 15px;
+    width: 90%;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  .hireMeSubmitBtn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

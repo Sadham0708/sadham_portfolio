@@ -1,0 +1,130 @@
+/* Floating Resume Button */
+.resumeButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8ff1e; /* Bright Yellow */
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resumeButton:hover {
+  transform: scale(1.1);
+  background-color: #ffd700;
+}
+
+/* Modal Background */
+.resumeModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+.modalContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modalContent p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Download Button */
+.downloadBtn {
+  display: inline-block;
+  background-color: #f8ff1e; /* Yellow */
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .modalContent {
+    padding: 15px;
+    height: auto;
+  }
+
+  .modalContent iframe {
+    height: 400px;
+  }
+
+  .resumeButton {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    padding: 10px;
+    height: auto;
+  }
+
+  .closeBtn {
+    font-size: 1.8rem;
+  }
+
+  .resumeButton {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .modalContent iframe {
+    height: 300px;
+  }
+}

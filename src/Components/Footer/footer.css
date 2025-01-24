@@ -1,0 +1,69 @@
+/* Base styles for footer */
+#footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 2rem 1rem; /* Reduced padding for better spacing on small screens */
+  text-align: center;
+}
+
+.footerContent p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.footerContent .socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 1.5rem; /* Balanced gap between links */
+}
+
+.footerContent .socialLinks a {
+  color: #f8ff1e; /* Yellow color for links */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500; /* Slightly bold for better visibility */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footerContent .socialLinks a:hover {
+  color: white; /* Change to white on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .footerContent p {
+    font-size: 0.95rem;
+  }
+
+  .footerContent .socialLinks {
+    gap: 1rem;
+  }
+
+  .footerContent .socialLinks a {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+  #footer {
+    padding: 1.5rem 1rem; /* Adjusted padding for mobile */
+  }
+
+  .footerContent p {
+    font-size: 0.85rem;
+  }
+
+  .footerContent .socialLinks {
+    flex-direction: column; /* Stacks links vertically */
+    gap: 1rem; /* Smaller gap for vertical alignment */
+  }
+
+  .footerContent .socialLinks a {
+    font-size: 0.9rem;
+  }
+}

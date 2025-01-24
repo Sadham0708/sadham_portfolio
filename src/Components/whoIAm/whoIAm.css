@@ -1,0 +1,106 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#whoIAm {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #222;
+  color: white;
+}
+
+.whoIAmContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f8ff1e;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.highlightwrd {
+  color: #f8ff1e;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.highlight {
+  color: #f8ff1e;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .whoIAmContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .highlight {
+    font-size: 1rem;
+  }
+
+  .whoIAmContent {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .highlight {
+    font-size: 0.9rem;
+  }
+
+  .whoIAmContent {
+    padding: 0 0.5rem;
+  }
+}
