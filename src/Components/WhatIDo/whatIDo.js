@@ -29,10 +29,10 @@ const Projects = () => {
       link: "https://sadham0708.github.io/Memory_Game/",
     },
     {
-      title: "Weather Checker",
+      title: "Weather Forecasting",
       description: "An app to search weather conditions for any city using live API data.",
       image: weather,
-      link: "https://sadham0708.github.io/Weather/",
+      link: "https://sadham0708.github.io/weather_forecasting/",
     },
     {
       title: "Portfolio",
